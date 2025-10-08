@@ -7,8 +7,8 @@ import SolutionOverview from "~/components/SolutionOverview";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Customer Interactive Group" },
+    { name: "description", content: "Customer Success Accelerator" },
   ];
 }
 

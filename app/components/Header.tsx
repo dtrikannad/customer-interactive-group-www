@@ -52,6 +52,27 @@ const Header = () => {
               >
                 Solution
               </a>
+              <a
+                href="#our-process"
+                onClick={(e) => handleNavClick(e, 'our-process')}
+                className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Our Process
+              </a>
+              <a
+                href="#case-studies"
+                onClick={(e) => handleNavClick(e, 'case-studies')}
+                className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Case Studies
+              </a>
+              <a
+                href="#why-cig"
+                onClick={(e) => handleNavClick(e, 'why-cig')}
+                className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Why CIG
+              </a>
             </nav>
             <div className="hidden md:flex items-center space-x-4">
               <button
