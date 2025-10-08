@@ -1,0 +1,154 @@
+import { useState } from 'react';
+import { Link } from 'react-router';
+import EmailCapture from './EmailCapture';  // Update path as needed
+
+const Header = () => {
+
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+    // Close mobile menu if open
+    setIsMenuOpen(false);
+  };
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
+    e.preventDefault();
+    scrollToSection(sectionId);
+  };
+  return (
+  
+    <>
+      <header className="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex justify-between items-center">
+            <div className="flex items-center">
+              <Link to="/" className="text-2xl font-bold text-blue-600">
+                Customer Interactive Group
+              </Link>
+            </div>
+
+            {/* Desktop Navigation */}
+            <nav className="hidden md:flex space-x-8">
+              <a
+                href="#problem"
+                onClick={(e) => handleNavClick(e, 'problem')}
+                className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Problem
+              </a>
+              <a
+                href="#solution"
+                onClick={(e) => handleNavClick(e, 'solution')}
+                className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
+              >
+                Solution
+              </a>
+            </nav>
+            <div className="hidden md:flex items-center space-x-4">
+              <button
+                onClick={() => setIsModalOpen(true)}
+                className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+              >
+                Grow Revenue Now
+              </button>
+            </div>
+
+            {/* Mobile menu button */}
+            <button
+              className="md:hidden"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+
+          {/* Mobile Navigation */}
+          {isMenuOpen && (
+            <nav className="md:hidden mt-4 pb-4">
+              <div className="flex flex-col space-y-4">
+                <a
+                  href="#features"
+                  onClick={(e) => handleNavClick(e, 'features')}
+                  className="text-gray-600 hover:text-blue-600 cursor-pointer"
+                >
+                  Features
+                </a>
+                <a
+                  href="#pricing"
+                  onClick={(e) => handleNavClick(e, 'pricing')}
+                  className="text-gray-600 hover:text-blue-600 cursor-pointer"
+                >
+                  Pricing
+                </a>
+                <a
+                  href="#how-it-works"
+                  onClick={(e) => handleNavClick(e, 'how-it-works')}
+                  className="text-gray-600 hover:text-blue-600 cursor-pointer"
+                >
+                  How it Works
+                </a>
+                <a
+                  href="#about"
+                  onClick={(e) => handleNavClick(e, 'about')}
+                  className="text-gray-600 hover:text-blue-600 cursor-pointer"
+                >
+                  About
+                </a>
+                <a
+                  href="#faq"
+                  onClick={(e) => handleNavClick(e, 'faq')}
+                  className="text-gray-600 hover:text-blue-600 cursor-pointer"
+                >
+                  FAQ
+                </a>
+                <a
+                  href="#support"
+                  onClick={(e) => handleNavClick(e, 'support')}
+                  className="text-gray-600 hover:text-blue-600 cursor-pointer"
+                >
+                  Support
+                </a>
+                <button
+                  onClick={() => setIsModalOpen(true)}
+                  className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors w-full"
+                >
+                  Get Sample Letter
+                </button>
+              </div>
+            </nav>
+          )}
+        </div>
+      </header>
+
+
+      {/* Modal */}
+      {isModalOpen && (
+        <div
+          className="fixed inset-0 flex items-center justify-center z-50"
+          onClick={() => setIsModalOpen(false)}
+        >
+          <div
+            className="bg-white rounded-lg p-6 max-w-md w-full mx-4"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <EmailCapture onClose={() => setIsModalOpen(false)} />
+          </div>
+        </div>
+      )}
+    </>
+    
+  );
+};
+
+export default Header;
