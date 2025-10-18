@@ -99,52 +99,45 @@ const Header = () => {
             <nav className="md:hidden mt-4 pb-4">
               <div className="flex flex-col space-y-4">
                 <a
-                  href="#features"
-                  onClick={(e) => handleNavClick(e, 'features')}
+                  href="#problem"
+                  onClick={(e) => handleNavClick(e, 'problem')}
                   className="text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  Features
+                  Problem
                 </a>
                 <a
-                  href="#pricing"
-                  onClick={(e) => handleNavClick(e, 'pricing')}
+                  href="#solution"
+                  onClick={(e) => handleNavClick(e, 'solution')}
                   className="text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  Pricing
+                  Solution
                 </a>
                 <a
-                  href="#how-it-works"
-                  onClick={(e) => handleNavClick(e, 'how-it-works')}
+                  href="#our-process"
+                  onClick={(e) => handleNavClick(e, 'our-process')}
                   className="text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  How it Works
+                  Our Process
                 </a>
                 <a
-                  href="#about"
-                  onClick={(e) => handleNavClick(e, 'about')}
+                  href="#case-studies"
+                  onClick={(e) => handleNavClick(e, 'case-studies')}
                   className="text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  About
+                  Case Studies
                 </a>
                 <a
-                  href="#faq"
-                  onClick={(e) => handleNavClick(e, 'faq')}
+                  href="#why-cig"
+                  onClick={(e) => handleNavClick(e, 'why-cig')}
                   className="text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  FAQ
-                </a>
-                <a
-                  href="#support"
-                  onClick={(e) => handleNavClick(e, 'support')}
-                  className="text-gray-600 hover:text-blue-600 cursor-pointer"
-                >
-                  Support
+                  Why CIG
                 </a>
                 <button
                   onClick={() => setIsModalOpen(true)}
                   className="bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition-colors w-full"
                 >
-                  Get Sample Letter
+                  Grow Revenue Now
                 </button>
               </div>
             </nav>

@@ -132,7 +132,7 @@ const ProblemStatement = () => {
 
           {/* Impact Statistics */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
-            {impactData[activeTab].map((item, index) => (
+            {impactData[activeTab].map((item: any, index: any) => (
               <div key={index} className="text-center p-6 bg-gray-50 rounded-xl">
                 <div className="text-4xl font-bold text-red-600 mb-2">
                   {item.metric}

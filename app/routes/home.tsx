@@ -1,9 +1,12 @@
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 import Header from "~/components/Header";
 import Hero from "~/components/Hero";
 import ProblemStatement from "~/components/Problem";
 import SolutionOverview from "~/components/SolutionOverview";
+import OurProcess from "~/components/OurProcess";
+import WhyCIG from "~/components/WhyCIG";
+import CaseStudies from "~/components/CaseStudies";
+import Footer from "~/components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -22,5 +25,9 @@ export default function Home({ loaderData }: Route.ComponentProps) {
         <Hero />
         <ProblemStatement />
         <SolutionOverview />
+        <OurProcess />
+        <CaseStudies />
+        <WhyCIG />
+        <Footer />
     </>;
 }
