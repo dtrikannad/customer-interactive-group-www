@@ -3,7 +3,14 @@
   "name": "customer-interactive-group",
   "compatibility_date": "2025-04-04",
   "main": "./workers/app.ts",
+  "account_id": "efce280c37006ee7163f5d452f74a2dd",
   "vars": {
     "VALUE_FROM_CLOUDFLARE": "Hello from Cloudflare"
-  }
+  },
+	"routes": [
+		{
+			"pattern": "www.customerinteractivegroup.com",
+			"custom_domain": true
+		}
+	],
 }
