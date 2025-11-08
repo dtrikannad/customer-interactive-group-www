@@ -8,43 +8,43 @@ const ProblemStatement = () => {
       icon: '🔄',
       title: 'Reactive Fire-Fighting Instead of Proactive Growth',
       description: 'Your team spends their days responding to escalations instead of preventing them. Customer issues surprise you rather than being anticipated and addressed early.',
-      stat: '40% more time on crisis management'
+      stat: 'Companies waste 40% more time on crisis management'
     },
     {
       icon: '📉',
       title: 'Churn Rates That Drain Your Growth Engine',
       description: 'You\'re acquiring new customers, but they\'re walking out the back door faster than expected. Each lost customer represents months of sales effort and thousands in acquisition costs—gone.',
-      stat: '23% higher churn rates'
+      stat: 'Companies experience 23% higher churn rates'
     },
     {
       icon: '💰',
       title: 'Untapped Revenue Sitting in Your Customer Base',
       description: 'Your existing customers have expansion potential, but without systematic identification and nurturing, you\'re leaving money on the table while spending more to acquire new logos.',
-      stat: '60-70% missed expansion revenue'
+      stat: 'Companies miss 60-70% of expansion opportunities'
     },
     {
       icon: '🚫',
-      title: 'Scaling Chaos: No Formal Customer Success Strategy',
+      title: 'No Formal Customer Success Strategy',
       description: 'Customer success activities are scattered across sales, support, and account management. There\'s no unified approach, consistent methodology, or clear ownership of customer outcomes.',
-      stat: 'Breaks down at 100-150 customers'
+      stat: '22% slower in time-to-value'
     }
   ];
 
   const impactData = {
     financial: [
-      { metric: '23%', description: 'Higher churn rates without formal CS processes' },
+      { metric: '23%', description: 'Higher churn rates without formal or optimized CS processes' },
       { metric: '5-7x', description: 'More expensive to replace vs. retain customers' },
       { metric: '60-70%', description: 'Missed expansion revenue from existing base' }
     ],
     operational: [
-      { metric: '100-150', description: 'Customer limit before manual management breaks' },
+      { metric: '15-20', description: 'Customer-Ratio limit before manual management breaks' },
       { metric: '40%', description: 'More time spent on crisis vs. growth activities' },
       { metric: '91%', description: 'Of customers leave without complaining first' }
     ],
     competitive: [
       { metric: '2.3x', description: 'Faster growth with proactive CS programs' },
-      { metric: '91%', description: 'Of unhappy customers won\'t tell you before leaving' },
-      { metric: '500', description: 'Customers where old methods become bottlenecks' }
+      { metric: '81%', description: 'Of unhappy customers won\'t tell you before leaving' },
+      { metric: '64%', description: 'Of stalled onboarding customers are at risk for renewal' }
     ]
   };
 
@@ -61,12 +61,12 @@ const ProblemStatement = () => {
           </div>
           
           <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
-            The Manual Approach That Got You Here 
+            The Foundational Approach That Got You Here 
             <span className="text-red-600"> Won't Scale You</span> to Where You're Going
           </h2>
           
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Mid-market companies face a critical inflection point: as your customer base grows, 
+            Companies face a critical inflection point: as your customer base grows, 
             the cracks in relationship-based management begin to show—and they're costly.
           </p>
         </div>
@@ -151,8 +151,9 @@ const ProblemStatement = () => {
                 The Bottom Line:
               </h4>
               <p className="text-xl text-gray-700 mb-6 leading-relaxed">
-                What worked when you had <strong>50 customers</strong> becomes your biggest 
-                growth bottleneck at <strong>500 customers</strong>.
+                The same motions that got you here <b>will not be the same</b> you use to grow from here.
+                {/* What worked when you had <strong>50 customers</strong> becomes your biggest 
+                growth bottleneck at <strong>500 customers</strong>. */}
               </p>
               <button className="bg-red-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-red-700 transition-colors duration-300 shadow-lg hover:shadow-xl">
                 Stop the Revenue Leak - Get Your Strategy

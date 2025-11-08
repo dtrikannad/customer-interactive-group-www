@@ -9,24 +9,26 @@ const Hero = () => {
           <div className="space-y-8">
             {/* Main Headline */}
             <h1 className="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-              Transform Customer Relationships Into{' '}
+              Modernize Customer Success.{' '}
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-indigo-600">
-                Sustainable Growth
+                Maximize Lifetime Value — Minimize Cost to Serve
               </span>
+              
             </h1>
             
             {/* Subheadline */}
             <h2 className="text-xl lg:text-2xl text-gray-700 font-medium">
-              Stop guessing at customer success strategy. We deliver the exact methodologies and frameworks used by Fortune 500 companies to drive retention and exponential growth.
+Increase retention, expand revenue, and boost customer lifetime value through AI-assisted insights and proven methodologies / frameworks used by Fortune 500 companies to drive retention and exponential growth.
+
             </h2>
             
             {/* Value Proposition */}
             <p className="text-lg text-gray-600 leading-relaxed">
-              Our founder spent 15+ years building and scaling customer success programs at industry leaders like Oracle, Salesforce, Cisco, and DocuSign. We'll adapt these proven, enterprise-grade strategies specifically for your business to maximize customer lifetime value and accelerate revenue growth.
+              Our founder spent 15+ years building and scaling customer success programs at industry leaders like Oracle, Salesforce, Cisco, DocuSign, and Intuit. We'll adapt these proven enterprise, mid-market, and digital strategies specifically for your business to maximize customer lifetime value and accelerate revenue growth.
             </p>
             
             {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
+            {/* <div className="flex flex-col sm:flex-row gap-4">
               <button 
                 className="bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-blue-700 hover:to-indigo-700 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
                 onClick={() => {
@@ -45,7 +47,7 @@ const Hero = () => {
               >
                 View Success Stories
               </button>
-            </div>
+            </div> */}
             
             {/* Trust Indicators */}
             <div className="pt-8 border-t border-gray-200">

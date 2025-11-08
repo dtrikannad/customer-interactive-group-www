@@ -90,7 +90,7 @@ const CaseStudies = () => {
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">
-            Client Success Stories
+            Case Studies
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Discover how we've helped leading companies transform their customer success operations 
